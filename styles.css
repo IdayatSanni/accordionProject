@@ -43,11 +43,12 @@ body {
 .accordion .content-container .answer {
   position: relative;
   overflow: hidden;
-  height: 0;
+  display: none;
 
-  /* transition: 0.5s; */
-  /* overflow-y: auto; */
+  transition: 0.5s;
+  overflow-y: auto;
 }
-.accordion .content-container:active .answer {
-  height: 150px;
+
+.accordion .content-container.active .answer {
+  display: flex;
 }
